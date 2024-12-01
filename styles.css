@@ -1,36 +1,58 @@
 /* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364); /* Updated to a tech-inspired gradient */
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #fff; /* White text for contrast */
 }
 
 /* Main Container */
 .container {
     text-align: center;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1); /* Translucent background */
     padding: 50px; /* Increased padding for a more spacious layout */
     border-radius: 15px; /* Slightly more rounded corners */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
     width: 90%;
     max-width: 550px; /* Wider container for larger logos and text */
 }
 
-/* Headings */
-h1 {
-    font-size: 3rem; /* Increased font size for the main heading */
-    margin-bottom: 40px;
-    color: #333;
+/* Artistic Header */
+.header-tech {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
+.header-tech h1 {
+    font-size: 3rem; /* Main heading size */
+    margin: 0;
+}
+
+.tech-icon {
+    width: 50px;
+    height: auto;
+    opacity: 0.8; /* Subtle transparency */
+}
+
+.laptop-icon {
+    transform: rotate(-10deg); /* Artistic tilt */
+}
+
+.smartphone-icon {
+    transform: rotate(10deg);
+}
+
+/* Headings */
 h2 {
     font-size: 2.5rem; /* Increased font size for section headings */
     margin: 30px 0 20px;
-    color: #0073e6;
+    color: #00bcd4; /* Futuristic teal color */
 }
 
 /* Link List Styling */
@@ -71,20 +93,41 @@ h2 {
 .link-list a {
     text-decoration: none;
     font-size: 1.7rem; /* Increased font size for links */
-    color: #0073e6;
+    color: #00bcd4; /* Futuristic teal */
     transition: color 0.3s, transform 0.3s;
 }
 
 .link-list a:hover {
-    color: #005bb5;
+    color: #ffeb3b; /* Bright yellow hover effect */
     transform: scale(1.1); /* Slightly larger scale on hover */
+}
+
+/* Background Accents */
+body:before {
+    content: "</>";
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05); /* Faint code snippet */
+}
+
+body:after {
+    content: "{ }";
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05); /* Faint code snippet */
 }
 
 /* Divider Styling */
 .divider {
     border: none;
     height: 2px;
-    background: #0073e6;
+    background: #00bcd4; /* Futuristic color */
     margin: 30px 0;
 }
 
@@ -101,9 +144,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Bio Section */
 .bio {
     font-size: 1.4rem; /* Slightly larger bio text size */
-    color: #555;
+    color: #e0e0e0; /* Subtle gray */
 }
 
 /* Footer Styling */
@@ -111,7 +155,7 @@ footer {
     text-align: center;
     margin-top: 30px;
     font-size: 1.1rem; /* Slightly larger footer text */
-    color: #777;
+    color: #bbb;
 }
 
 /* Card Styling (Optional for Links) */
@@ -148,7 +192,7 @@ input, textarea {
 
 button {
     padding: 20px;
-    background: #0073e6;
+    background: #00bcd4; /* Futuristic button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -162,6 +206,10 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    .tech-icon {
+        width: 40px; /* Adjusted tech icon size */
+    }
+
     .link-list img {
         width: 50px;
         height: 50px;
