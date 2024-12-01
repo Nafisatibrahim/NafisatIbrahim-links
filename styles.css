@@ -1,0 +1,182 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 50px; /* Increased padding for a more spacious layout */
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    width: 90%;
+    max-width: 550px; /* Wider container for larger logos and text */
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem; /* Increased font size for the main heading */
+    margin-bottom: 40px;
+    color: #333;
+}
+
+h2 {
+    font-size: 2.5rem; /* Increased font size for section headings */
+    margin: 30px 0 20px;
+    color: #0073e6;
+}
+
+/* Link List Styling */
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    display: flex;
+    align-items: center;
+    margin: 25px 0; /* Increased spacing between items */
+    text-align: left;
+}
+
+/* General Link Logos */
+.link-list img {
+    width: 70px; /* Larger logo size for better visibility */
+    height: 70px; /* Ensures consistency */
+    margin-right: 25px; /* More spacing between logos and text */
+}
+
+/* Medium Logo (Custom Size) */
+.medium-logo {
+    width: 100px; /* Slightly larger Medium logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Outlook Logo (Custom Size) */
+.link-list img.outlook-logo {
+    width: 70px; /* Same size as other logos */
+    height: auto; /* Maintain aspect ratio for proper proportions */
+    margin-right: 25px;
+}
+
+/* Link Styling */
+.link-list a {
+    text-decoration: none;
+    font-size: 1.7rem; /* Increased font size for links */
+    color: #0073e6;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.link-list a:hover {
+    color: #005bb5;
+    transform: scale(1.1); /* Slightly larger scale on hover */
+}
+
+/* Divider Styling */
+.divider {
+    border: none;
+    height: 2px;
+    background: #0073e6;
+    margin: 30px 0;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    width: 140px; /* Increased profile photo size */
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 1.4rem; /* Slightly larger bio text size */
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1rem; /* Slightly larger footer text */
+    color: #777;
+}
+
+/* Card Styling (Optional for Links) */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 20px 0;
+    background: #f9f9f9;
+    border-radius: 15px; /* Rounded corners for cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Slightly larger scale on hover */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+input, textarea {
+    padding: 20px; /* Larger input fields */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.3rem; /* Larger text size for inputs */
+}
+
+button {
+    padding: 20px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger button text */
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .link-list img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .link-list img.outlook-logo {
+        width: 50px; /* Adjusted Outlook logo size for smaller screens */
+    }
+
+    .link-list a {
+        font-size: 1.5rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
